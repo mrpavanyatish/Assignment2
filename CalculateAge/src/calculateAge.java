@@ -11,7 +11,7 @@ public class calculateAge {
 		
 		SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
 		
-		Date dob = dateFormat.parse("11/28/1991");
+		Date dob = dateFormat.parse("06/07/1992");
 		
 		Calendar dobCalendar = Calendar.getInstance();
 		
@@ -25,9 +25,10 @@ public class calculateAge {
 		
 		if(months<0)
 		{
-			age=age-1;
-			months = todayCalendar.get(Calendar.MONTH)+1;
+			age--;
+			months=todayCalendar.get(Calendar.MONTH)+1;
 			day = todayCalendar.get(Calendar.DAY_OF_MONTH);
+		
 		}
 		else if(months==0)
 		{
@@ -46,28 +47,17 @@ public class calculateAge {
 			else
 			{
 				months=0;
-				day=Math.abs(dobCalendar.get(Calendar.DAY_OF_MONTH)-todayCalendar.get(Calendar.DAY_OF_MONTH));
-
-				
+				day=Math.abs(dobCalendar.get(Calendar.DAY_OF_MONTH)-todayCalendar.get(Calendar.DAY_OF_MONTH));			
 			}	
 		}
 		else
 		{
 			if(day<0)
 			{
-				day = Math.abs(day = todayCalendar.get(Calendar.DAY_OF_MONTH)-dobCalendar.get(Calendar.DAY_OF_MONTH));
+				day=Math.abs(dobCalendar.get(Calendar.DAY_OF_MONTH)-todayCalendar.get(Calendar.DAY_OF_MONTH));			
 
 			}
-			else if(day==0)
-			{
-				
-			}
-			else
-			{
-				months--;
-				months=months+1;
-				day = todayCalendar.get(Calendar.DAY_OF_MONTH);
-			}
+			
 		}
 		System.out.println("Person Age is " + age +" years " + months + " months "  + day +" days ");
 
