@@ -23,6 +23,12 @@ public class calculateAge {
 		
 		int day = todayCalendar.get(Calendar.DAY_OF_MONTH)-dobCalendar.get(Calendar.DAY_OF_MONTH);
 		
+		int leapYear = todayCalendar.get(Calendar.YEAR);
+		if(leapYear%4 == 0)
+		{
+			System.out.println("The current year is a Leap Year");
+		}
+		
 		if(months<0)
 		{
 			age--;
