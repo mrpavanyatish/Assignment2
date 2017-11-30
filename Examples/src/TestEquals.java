@@ -9,7 +9,7 @@ public class TestEquals {
 		
 		//it gives false
 		System.out.println("s1 == s2" + s1 == s2);
-		System.out.println("s1.equals(s2)" + s1.equals(s2));
+		System.out.println("s1.equals(s2) : " + s1.equals(s2));
 		
 		Item item1=new Item(1001,"iphone",200);
 		Item item2=new Item(1001,"iphone",200);
