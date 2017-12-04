@@ -1,5 +1,5 @@
 
-public class Item {
+public class Item  implements Cloneable{
 
 	private int id;
 	private String name;
@@ -64,6 +64,18 @@ public class Item {
 	public int hashCode() {
 		
 		return (id+name+price).hashCode();
+	}
+	
+	@Override
+	public String toString() {
+		
+		return id+name+price ;
+	}
+	@Override
+	//if this class clone is used in some other package then change protected to public
+	protected Object clone() throws CloneNotSupportedException {
+	
+		return super.clone();
 	}
 	
 	

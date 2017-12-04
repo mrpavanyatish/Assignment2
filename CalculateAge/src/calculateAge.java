@@ -70,6 +70,7 @@ public class calculateAge {
 			}
 			
 		}
+		
 		System.out.println("Person Age is " + age +" years " + months + " months "  + day +" days ");
 
 	}

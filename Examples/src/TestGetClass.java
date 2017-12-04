@@ -13,13 +13,13 @@ public class TestGetClass {
 		
 		Item item1 = new Item(101,"iphone",200);
 		
-		Class class1 = item1.getClass();
+		Class class11 = item1.getClass();
 		
-		System.out.println("Class Name : " + class1.getName());
+		System.out.println("Class Name : " + class11.getName());
 		System.out.println();
 		System.out.println("Method List : ");
 		
-		Method[] methodArr = class1.getMethods();
+		Method[] methodArr = class11.getMethods();
 		
 		for(Method s : methodArr)
 		{
