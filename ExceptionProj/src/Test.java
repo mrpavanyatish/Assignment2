@@ -27,6 +27,7 @@ public class Test {
 			SavingsAccount account = new SavingsAccount(101,5000,"active",1234);
 			
 			account = null;
+			//added by nagarjuna
 			
 			account.withDraw(2000);
 			
